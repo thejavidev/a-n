@@ -1,0 +1,104 @@
+@media only screen and (min-width:1200px) {
+    header{
+        .container-fluid{
+            padding: 40px 100px;
+        }
+    }
+    footer{
+        .container-fluid{
+            padding: 0px 100px;
+        }
+    }
+}
+@media screen and (max-width: 991px){
+
+    .works{
+        .container {
+            padding: 50px 50px;
+            .row{
+                .menu{
+                    .works-button{
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        button{
+                            padding: 0 10px;
+                        }
+                    }
+                }
+
+                .portfolio_gallery{
+                    padding-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .banner{
+        .container-fluid{
+            .row{
+                .image{
+                    i{
+                        font-size: 14px;
+                    }
+                    span{
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .works{
+        .container {
+            padding: 50px 20px;
+            .row{
+                .menu{
+                    .works-button{
+                        button{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about{
+        .container-fluid{
+            .row{
+                .strategy, .creativ, .digital{
+                    flex-direction: column;
+                    .title{
+                        h2{
+                            font-size: 66px;
+                        }
+                    }
+                    .text{
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 565px){
+    .works{
+        .container {
+            .row{
+                .portfolio_gallery{
+                    .box{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

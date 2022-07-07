@@ -1,0 +1,51 @@
+.homer-banner{
+    position: relative;
+    margin-bottom: 50px;
+    .container-fluid{
+
+        padding: 10px 0px 0px 100px;
+        .row{
+            padding: 0px;
+            .text{
+                padding: 0;
+                .content{
+                    height: 100%;
+                    display: flex;
+                    
+                    padding:100px 0px 0px 150px;
+                    flex-direction: column;
+                    h2{
+                        font-weight: 700;
+                        font-size: 27px;
+                        line-height: 30px;
+                        width: 80%;
+                        color: #DC248E;
+                        margin-bottom: 50px;
+                    }
+                    div{
+                        i{
+                            color: #DC248E;
+                            padding-right: 10px;
+                        }
+                        span{
+                            font-weight: 600;
+                            font-size: 18px;
+                            text-decoration-line: underline;
+                            color: #001A54;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .picture{
+                padding: 0;
+                .imag{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

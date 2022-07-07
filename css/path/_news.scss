@@ -1,0 +1,83 @@
+.news{
+    position: relative;
+    .container-fluid{
+        padding: 100px 100px;
+        .title{
+            font-weight: 600;
+            font-size: 175px;
+            text-transform: uppercase;
+            color: #DC248E;
+            padding-left: 245px;
+            width: max-content;
+            padding-bottom: 50px;
+        }
+        .row{
+            .left{
+                h2{
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #626262;
+                    width: 50%;
+                }
+            }
+            .box{
+                padding: 0;
+                height: 100%;
+                position: relative;
+                
+                .image{
+                    width: 100%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        
+                        transition: all 4s linear;
+                    }
+                    &:hover img{
+                        transform: scale(1.5) rotate(10deg);
+                    }
+                    .content{
+                        position: absolute;
+                        left: 40px;
+                        bottom: 50px;
+                        h2{
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: #fff;
+                        }
+                        span{
+                            font-weight: 500;
+                            font-size: 10px;
+                            color: #fff;
+                        }
+                    }
+                    
+                }
+            
+            }
+            .right{
+                display: flex;
+                align-items: flex-end;
+                justify-content: right;
+                
+                h2{
+                    font-weight: 500;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    color: #626262;
+                    width: 50%;
+                }
+                .right-btn{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    .btn{
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

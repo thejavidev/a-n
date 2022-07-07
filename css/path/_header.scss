@@ -1,0 +1,167 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1099;
+    .container-fluid{
+        .row{
+            nav{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .header-left{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    &.none{
+                        display: none;
+                    }
+                    .header-left-text{
+                        padding-left: 80px;
+                        width: 50%;
+                        span{
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #626262;
+                            
+                        }
+                    }
+                }
+                .header-right{
+                    .nav-mobile-button{
+                        overflow: hidden;
+                        margin: auto;
+                        width: 90px;
+                        height: 90px;
+                        background: none;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 20px;
+                        border: none;
+                        outline: none;
+                        right: 100px;
+                        z-index: 1000;
+                        .nav-mobile-bar{
+                            left: 15px;
+                            width: 35px;
+                            height: 3px;
+                            background: black;
+                            position: absolute;
+                            -webkit-transition: all 0.8s;
+                            transition: all 0.4s;
+                            &#nav-mobile-bar-top {
+                                top: 39px;
+                            }
+                            &#nav-mobile-bar-middle {
+                                top: 47px;
+                            }
+                            &.active{
+                                &#nav-mobile-bar-top{
+                                    top: 45px;
+                                    transform: rotate(145deg);
+                                }
+                                &#nav-mobile-bar-middle {
+                                    top: 45px;
+                                    transform: rotate(-145deg);
+                                }
+                            
+                            }
+                        }
+                    }
+                    .modal{
+                        overflow: hidden;
+                        height: 100vh;
+                        .modal-dialog{
+                            .modal-content{
+                                background: #001A54;
+                                .modal-header{
+                                    border: none;
+                                    .btn-close{
+                                        background: none;
+                                        position: absolute;
+                                        top: 40px;
+                                        right: 100px;
+                                        width: 50px;
+                                        height: 50px;
+                                        z-index: 88;
+                                        border: none;
+                                        outline: none;
+                                        box-shadow: none;
+                                        i{
+                                            font-size: 40px;
+                                            color: #fff;
+                                            transition: all .4s linear;
+                                        }
+                                        &:is(:hover,:focus) i{
+                                            color: red;
+                                        }
+                                    }
+                                }
+                                .modal-body{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+                                    padding-top: 70px;
+                                    padding-right: 70px;
+                                    ul{
+                                        li{
+                                            &:not(:last-child,:first-child){
+                                                padding-top: 45px;
+                                            }
+                                            a{
+                                                font-size: 100px;
+                                                color: #fff;
+                                                text-transform: capitalize;
+                                                transition: all .4s linear;
+                                                &.active{
+                                                    color: #F29942;
+                                                }
+                                                &:is(:hover,:focus){
+                                                    color: #F29942;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.isFixed{
+        background-color: #fff;
+        z-index: 1099;
+        box-shadow: 2px 2px 4px 0px rgba(2,45,98,.1);
+        transition: 0.5s ease-in-out;
+        animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+        height: 70px;
+        .container-fluid{
+            padding: 15px 100px;
+            .row{
+                nav{
+                    .header-right{
+                        .nav-mobile-button{
+                            top: -10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes stickySlideDown {
+    0% {
+        opacity: 0.7;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+            transform: translateY(0); 
+    }
+  }
