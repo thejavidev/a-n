@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
 			gsap.to(".preloader", 0.3, { delay: 0.5, y: "-100%" });
 			$("html").removeClass("add");
 		}
-	}, 30);
+	}, 10);
 
 });
 //FILTER========================

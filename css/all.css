@@ -375,6 +375,10 @@ header .container-fluid .row nav .header-right .nav-mobile-button .nav-mobile-ba
           transform: rotate(-145deg);
 }
 
+header .container-fluid .row nav .header-right .nav-mobile-button.work-single .nav-mobile-bar {
+  background: #ffff;
+}
+
 header .container-fluid .row nav .header-right .modal {
   overflow: hidden;
   height: 100vh;

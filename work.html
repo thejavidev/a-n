@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<!-- 
 <div class="preloader">
     <div class="preloader__container">
             <h1 class="preloader__container__percent"></h1>
@@ -24,29 +24,30 @@
         <div class="preloader__container__preload__dot">         </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- HEADER ==================================== -->
-<header>
+<header class="">
     <div class="container-fluid">
         <div class="row">
             <nav>
                 <div class="header-left">
                     <div class="logo" onclick="media('index.html')">
-                        <a href="#0"><img src="/img/header/logo.png" alt=""></a>
+                        <a href="#0" class="d-none"><img src="/img/header/logo.png" alt=""></a>
+                        <a href="#0"><img src="/img/header/logo-white.png" alt=""></a>
                     </div>
                     <div class="header-left-text">
-                        <span>ağıllı həllər təklif edən 
+                        <span class="d-none">ağıllı həllər təklif edən 
                             butik reklam agentliyi
                         </span>
                     </div>
-                    </div>
-                    <div class="header-right">
-                        <button class="nav-mobile-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            <div id="nav-mobile-bar-top" class="nav-mobile-bar"></div>
-                            <div id="nav-mobile-bar-middle" class="nav-mobile-bar"></div>
-                        </button>
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                </div>
+                <div class="header-right">
+                    <button class="nav-mobile-button work-single" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div id="nav-mobile-bar-top" class="nav-mobile-bar"></div>
+                        <div id="nav-mobile-bar-middle" class="nav-mobile-bar"></div>
+                    </button>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -70,7 +71,6 @@
 </header>
 
 <main class="main">
-    <div class="mt-div"></div>
     <!-- WORK BANNER ==================================== -->
     <section class="work_banner">
         <div class="work-banner-inner">
