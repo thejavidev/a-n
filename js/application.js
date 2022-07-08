@@ -1,3 +1,7 @@
+function openpage(page) {   
+	window.location.href=page;
+}
+
 var body = $('body');
 
 //NAVBAR-OVERFOLLOW========================
@@ -30,9 +34,6 @@ var APP = {
 };
 // var html = document.querySelector("html");
 // html.classList.add("add");
-function media(page) {
-	window.location.href = page;
-}
 
 
 $(window).on('scroll', function (event) {

@@ -165,7 +165,7 @@ img {
 }
 
 body {
-  background: #F4F4F4;
+  background: #fff;
   overflow: visible;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -226,8 +226,7 @@ body.overflow {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border-bottom: solid 1px transparent;
-  background: #F4F4F4;
+  background: #fff;
 }
 
 .main .mt-div {
@@ -454,6 +453,15 @@ header .container-fluid .row nav .header-right .modal .modal-dialog .modal-conte
 
 header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-body ul li a:is(:hover, :focus) {
   color: #F29942;
+}
+
+header .container-fluid .row nav .header-right .apply {
+  color: #fff;
+  padding-right: 100px;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 header.isFixed {
@@ -994,6 +1002,7 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  cursor: pointer;
 }
 
 .work .container-fluid .row .right h2 {
@@ -1437,6 +1446,58 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
           box-shadow: none;
 }
 
+.news.details .container-fluid .row .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: -webkit-right;
+  cursor: pointer;
+}
+
+.news.details .container-fluid .row .box {
+  position: relative;
+}
+
+.news.details .container-fluid .row .box .image img {
+  height: 500px;
+}
+
+.news.details .container-fluid .row .box .content {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 80%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.news.details .container-fluid .row .box .content h3 {
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.news.details .container-fluid .row .box:hover .content {
+  top: 60%;
+  left: 50%;
+  opacity: 1;
+  z-index: 55;
+}
+
 .news-content .container-fluid {
   padding: 0;
 }
@@ -1649,6 +1710,80 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
   padding-right: 15px;
 }
 
+.contact {
+  width: 100%;
+}
+
+.contact .container .row .left .content {
+  padding: 10px;
+  width: 70%;
+}
+
+.contact .container .row .left .content span {
+  font-weight: 700;
+  font-size: 27px;
+  color: #DC248E;
+  line-height: 30px;
+}
+
+.contact .container .row .right .content {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding-right: 100px;
+}
+
+.contact .container .row .right .content .inner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .container .row .right .content .title, .contact .partners .container .row .right .partners_all .content h2, .partners .contact .container .row .right .partners_all .content h2, .contact .partners .container .row .partners_all .right .content h2, .partners .contact .container .row .partners_all .right .content h2 {
+  padding-bottom: 20px;
+}
+
+.contact .container .row .right .content .title span, .contact .partners .container .row .right .partners_all .content h2 span, .partners .contact .container .row .right .partners_all .content h2 span, .contact .partners .container .row .partners_all .right .content h2 span, .partners .contact .container .row .partners_all .right .content h2 span {
+  text-align: start;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+}
+
+.contact .container .row .right .content .subscribe {
+  position: relative;
+}
+
+.contact .container .row .right .content .subscribe input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #FF1F92;
+  width: 400px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact .container .row .right .content .subscribe button {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 footer {
   background: #ffff;
   width: 100%;
@@ -1808,6 +1943,9 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   }
   footer .container-fluid {
     padding: 0px 100px;
+  }
+  .contact .container {
+    padding: 50px 0;
   }
 }
 

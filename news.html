@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="/css/plugins/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="/css/all.css">
+    <title>Ağıllı nağıllar - Works</title>
 </head>
+
 <body>
 <!-- <div class="preloader">
     <div class="preloader__container">
-        <h1 class="preloader__container__percent"></h1>
+            <h1 class="preloader__container__percent"></h1>
         <div class="preloader__container__preload">
         <div class="preloader__container__preload__dot">         </div>
         <div class="preloader__container__preload__dot">         </div>
@@ -26,6 +25,7 @@
     </div>
 </div> -->
 
+<!-- HEADER ==================================== -->
 <header>
     <div class="container-fluid">
         <div class="row">
@@ -54,8 +54,8 @@
                                 <div class="modal-body">
                                     <ul>
                                         <li><a href="index.html">home</a></li>
-                                        <li><a  class="active" href="about.html" >about</a></li>
-                                        <li><a href="works.html">works</a></li>
+                                        <li><a href="about.html" >about</a></li>
+                                        <li><a href="works.html" class="active">works</a></li>
                                         <li><a href="news.html">news</a></li>
                                     </ul>
                                 </div>
@@ -68,10 +68,10 @@
     </div>
 </header>
 
-<mian class="main">
+<main class="main">
     <div class="mt-div"></div>
-     <!-- ABOUT ==================================== -->
-     <section class="banner">
+    <!-- BANNER ==================================== -->
+    <section class="banner">
         <div class="container-fluid">
             <div class="row">
                 <div class="image">
@@ -83,148 +83,52 @@
             </div>
         </div>
     </section>
-    <section class="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-lg-12 col-md-12 strategy">
-                    <div class="title">
-                        <h2>strategiya</h2>
-                    </div>
-                    <div class="text">
-                        <p>Yaradıcı işdə uğurlu strategiya ağıllı yol seçimi deməkdir.
-                            Bizim ağlımız belə şeylərə yaxşı işləyir.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-12 col-md-12">
-                    <div class="creativ">
-                        <div class="col-lg-4 text">
-                            <p>Biz xoşbəxt sonluqla bitən nağıllar danışmağı sevirik. Bizim nağıllarımız
-                                yuxu yox, uğur gətirir.
-                            </p>
-                        </div>
-                        <div class="col-lg-8 title">
-                            <h2>kreativ</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-12 col-md-12 digital">
-                    <div class="text">
-                        <p>Sizə nağıl kimi gəlsə də, dijital artıq yeni dövrümüzün adıdır. Dijitalda bütün
-                            nağıllar həm də gerçəkləşə bilir.
-                        </p>
-                    </div>
-                    <div class="title">
-                        <h2>dijital</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PARTNERS ==================================== -->
-    <section class="partners mb-5">
+    <!-- WORKS ==================================== -->
+    <section class="works">
         <div class="container">
             <div class="row">
-                <div class="partners_all col-xs-10 col-lg-10 col-md-12 ">
-                    <div class="content">
-                        <h2>partnyorlar</h2>
-                        <span>Onlar kimi sizin üçün də ağıllı həllər təklif edə bilərik.</span>
-                    </div>
-                    <div class="carousels">
-                        <div class="carousel-left ">
-                            <div class="swiper-container _js_carosuel">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide slide-img">
-                                        <img class="img-fluid" src="img/global/partners/partners-all.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/global/partners/partners-all.png" alt="">
-                                    </div>
-                                </div>
+                <div class="portfolio_gallery tab col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="row g-4"> 
+                        <div class="box col-xl-6 col-lg-6 col-md-6 col-sm-6 " onclick="openpage('news-detail.html')" >
+                            <div class="image">
+                                <img src="img/global/news/news1.png">
                             </div>
                         </div>
-                        <div class="carousel-right ">
-                            <h2>Dİgər partNyorlar</h2>
-                            <div class="right-btn">
-                                <button type="button" class="btn btn-next">
-                                    <img src="img/global/team/pink-arrow.png" alt="">
-                                </button>
+                        <div class="box col-xl-6 col-lg-6 col-md-6 col-sm-6  " onclick="openpage('news-detail.html')">
+                            <div class="image">
+                                <img src="img/global/news/news1.png">
+                            </div>
+                        </div>
+                        <div class="box col-xl-6 col-lg-6 col-md-6 col-sm-6  " onclick="openpage('news-detail.html')">
+                            <div class="image">
+                                <img src="img/global/news/news1.png">
+                            </div>
+                        </div>
+                        <div class="box col-xl-6 col-lg-6 col-md-6 col-sm-6  " onclick="openpage('news-detail.html')">
+                            <div class="image">
+                                <img src="img/global/news/news1.png">
+                            </div>
+                        </div>
+                        <div class="box col-xl-6 col-lg-6 col-md-6 col-sm-6 _ " onclick="openpage('news-detail.html')">
+                            <div class="image">
+                                <img src="img/global/news/news1.png">
+                            </div>
+                        </div>
+                        <div class="box col-xl-6 col-lg-6 col-md-6 col-sm-6 " onclick="openpage('news-detail.html')">
+                            <div class="image">
+                                <img src="img/global/news/news1.png">
                             </div>
                         </div>
                     </div>
+                    <div class="more">
+                        <a href="javascript:(0)">LOAD MORE</a>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
-
-    <!-- TEAM ==================================== -->
-    <section class="team">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="team_left ">
-                    <div class="logo_team">
-                        <div class="image">
-                            <img src="/img/global/team/team_logo.png" alt="">
-                        </div>
-                        <span>1st sit amet, consectetur adipiscing elit. Aliquam tempus ac.</span>
-                    </div>
-                    <div class="title">
-                        <h2>komanda</h2>
-                    </div>
-                </div>
-
-                <div class="team_right owl-carousel owl-theme">
-                    <div class="item"><img src="img/global/team/team_banner.png" alt=""></div>
-                    <div class="item"><img src="img/global/team/team_banner.png" alt=""></div>
-                    <div class="item"><img src="img/global/team/team_banner.png" alt=""></div>
-                    <div class="item"><img src="img/global/team/team_banner.png" alt=""></div>
-                    <div class="item"><img src="img/global/team/team_banner.png" alt=""></div>
-                    <div class="item"><img src="img/global/team/team_banner.png" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEWS ==================================== -->
-    <section class="news">
-    <div class="container-fluid">
-        <div class="title">YENİ</div>
-        <div class="row">
-            <div class="col-lg-2 left">
-                <h2>ƏSAS YENİLİKLƏR</span>
-            </div>
-            <div class="col-lg-4 box">
-                <div class="image">
-                    <img src="/img/global/news/news1.png" alt="">
-                    <div class="content">
-                        <h2>Reamon del teromsaw</h2>
-                        <span>Today 20:34</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 box">
-                <div class="image">
-                    <img src="/img/global/news/news2.png" alt="">
-                    <div class="content">
-                        <h2>Warona somena desozien goen</h2>
-                        <span>Today 20:34</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 right">
-                <h2>Dİgər xəbərlər</h2>
-                <div class="right-btn">
-                    <button type="button" class="btn btn-next">
-                        <img src="img/global/news/arrow-right.png" alt="">
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-</mian>
-
+</main>
 
 <!-- FOOTER ==================================== -->
 <footer class="__js_fixed-footer">
@@ -294,7 +198,6 @@
 </footer>
 
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
@@ -306,6 +209,7 @@
 <script src="js/application.js"></script>
 <script type="text/javascript">
     APP.filter();
-</script>    
+</script>  
 </body>
+
 </html>

@@ -201,7 +201,7 @@ img {
 //     src: url("../font/Codec-600.ttf") format("truetype");
 // }
 body {
-    background: #F4F4F4;
+    background: #fff;
     overflow: visible;
 
     -webkit-font-smoothing: antialiased;
@@ -263,8 +263,9 @@ body {
     position: relative;
     z-index: 2;
     flex-grow: 1;
-    border-bottom: solid 1px transparent;
-    background: #F4F4F4;
+    background: #fff;
+ 
+    // box-shadow: 5px 5px 14px 0px rgba(2,45,98,.2);
     .mt-div{
         margin-top: 100px;
     }
@@ -278,5 +279,6 @@ body {
 @import './path/global';
 @import './path/news';
 @import './path/news-detail';
+@import './path/contact';
 @import './path/footer';
 @import './path/responsive';
