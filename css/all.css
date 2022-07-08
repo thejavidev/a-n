@@ -375,8 +375,12 @@ header .container-fluid .row nav .header-right .nav-mobile-button .nav-mobile-ba
           transform: rotate(-145deg);
 }
 
-header .container-fluid .row nav .header-right .nav-mobile-button.work-single .nav-mobile-bar {
+header .container-fluid .row nav .header-right .nav-mobile-button .nav-mobile-bar.work-single.nav-mobile-bar {
   background: #ffff;
+}
+
+header .container-fluid .row nav .header-right .nav-mobile-button .nav-mobile-bar.addColor {
+  background: black !important;
 }
 
 header .container-fluid .row nav .header-right .modal {
@@ -827,20 +831,42 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
 }
 
 .work-project-images .back-project {
-  position: absolute;
-  top: 0;
-  left: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1rem 0;
+  height: 200px;
 }
 
-.work-project-images .back-project i {
-  padding-top: 6px;
+.work-project-images .back-project .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 50px;
+  cursor: pointer;
 }
 
-.work-project-images .back-project span {
+.work-project-images .back-project .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.work-project-images .back-project .text span {
   padding-left: 10px;
   font-style: normal;
   font-weight: 500;
@@ -854,17 +880,23 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
   padding: 0;
 }
 
+.work-project-images .container-fluid .row {
+  width: 100%;
+}
+
 .work-project-images .container-fluid .row .resize-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
   padding: 1rem 0;
+}
+
+.work-project-images .container-fluid .row .resize-images img {
+  width: 100%;
 }
 
 .work-project-images .container-fluid .row .full-images {

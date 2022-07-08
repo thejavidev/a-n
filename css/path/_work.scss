@@ -87,32 +87,45 @@
  
     
     .back-project{
-        position: absolute;
-        top: 0;
-        left: 200px;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 1rem 0;
-        i{
-            padding-top: 6px;
+        height: 200px;
+        .arrow{
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 50px;
+            cursor: pointer;
         }
-        span{
-            padding-left: 10px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: normal;
-            text-transform: uppercase;
-            color: #626262;
+        .text{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 50px;
+            span{
+                padding-left: 10px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: normal;
+                text-transform: uppercase;
+                color: #626262;
+            }
         }
     }
     .container-fluid{
         padding: 0;
         .row{
+            width: 100%;
             .resize-images{
                 display: flex;
-                align-items: center;
                 justify-content: center;
+                width: 100%;
                 padding: 1rem 0;
+                img{
+                    width: 100%;
+                }
+                
             }
 
             .full-images{

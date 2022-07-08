@@ -44,8 +44,8 @@
                 </div>
                 <div class="header-right">
                     <button class="nav-mobile-button work-single" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <div id="nav-mobile-bar-top" class="nav-mobile-bar"></div>
-                        <div id="nav-mobile-bar-middle" class="nav-mobile-bar"></div>
+                        <div id="nav-mobile-bar-top" class="nav-mobile-bar work-single"></div>
+                        <div id="nav-mobile-bar-middle" class="nav-mobile-bar work-single"></div>
                     </button>
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
@@ -101,28 +101,36 @@
     
     <!-- WORK PROJECT ==================================== -->
     <section class="work-project-images">
-        <div class="back-project">
-            <i class="fa-solid fa-arrow-left-long"></i><span>back</span>
-        </div>
+        
         <div class="container-fluid">
             <div class="row">
                 <div class="resize-images">
-                    <div class="inner-image">
+                    <div class="back-project col-lg-2">
+                        <div class="text">
+                            <span>back</span>
+                        </div>
+                        <div class="arrow">
+                            <button type="button" class="btn btn-next">
+                                <img src="img/global/news/arrow-left.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="inner-image col-lg-8">
                         <img src="img/work/img1.png" alt="">
                     </div>
                 </div>
                 <div class="full-images">
-                    <div class="inner-image">
+                    <div class="inner-image col-lg-12">
                         <img src="img/work/img2.png" alt="">
                     </div>
                 </div>
                 <div class="resize-images">
-                    <div class="inner-image">
+                    <div class="inner-image col-lg-8">
                         <img src="img/work/img3.png" alt="">
                     </div>
                 </div>
                 <div class="resize-images">
-                    <div class="inner-image">
+                    <div class="inner-image col-lg-8">
                         <img src="img/work/img4.png" alt="">
                     </div>
                 </div>
@@ -210,6 +218,18 @@
 <script src="js/application.js"></script>
 <script type="text/javascript">
     APP.filter();
+
+    $(window).on('scroll', function (event) {
+	var scroll = $(window).scrollTop();
+    logo = $("header .logo img");
+	if (scroll < 50) {
+		$('.nav-mobile-bar').removeClass('addColor');
+		logo.attr('src', '/img/header//logo-white.png');
+	} else {
+        $('.nav-mobile-bar').addClass('addColor');
+		logo.attr('src', '/img/header//logo.png');
+	}
+});
 </script>  
 </body>
 

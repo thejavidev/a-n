@@ -69,10 +69,14 @@ header{
                                 }
                             
                             }
+                            &.work-single.nav-mobile-bar{
+                                background: #ffff;
+                            }
+                            &.addColor{
+                                background: black !important;
+                            }
                         }
-                        &.work-single .nav-mobile-bar{
-                            background: #ffff;
-                        }
+                        
                     }
                     .modal{
                         overflow: hidden;

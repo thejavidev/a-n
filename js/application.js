@@ -37,6 +37,7 @@ function media(page) {
 
 $(window).on('scroll', function (event) {
 	var scroll = $(window).scrollTop();
+
 	if (scroll < 50) {
 		$("header").removeClass("isFixed");
 	} else {
