@@ -1,0 +1,147 @@
+.news-content{
+    .container-fluid{
+        padding: 0;
+        .row{
+            justify-content: center;
+            .news-padding{
+                padding: 100px 150px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .news-inner{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .content-top{
+                    width: 100%;        
+                    h2{
+                        color: #DC248E;
+                        font-weight: 600;
+                        font-size: 42px;
+                        padding-bottom: 30px;
+                        width: 80%;
+                    }
+                    span{
+                        display: flex;
+                        flex-direction: column;
+                        color: #626262;
+                        font-weight: 600;
+                        font-size: 14px;
+                        padding: 1rem 0;
+                    }
+    
+                    p{
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #626262;
+                        line-height: 25px;
+                        width: 80%;
+                        padding: 1rem 0;
+                        span{
+                            color: #DC248E;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 25px;
+                            padding: 1rem 0;
+                        }
+                    }
+                }
+    
+                .image{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 70px;
+                    img{
+                        width: 100%;
+                        display: block;
+                        height: 500px;
+                    }
+                }
+    
+                .content-bottom{
+                    padding: 50px 0;
+                    display: flex;
+                    justify-content: right;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    p{
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #626262;
+                        line-height: 25px;
+                        padding: 2rem 0;
+                        width: 40%;
+                        span{
+                            color: #DC248E;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 25px;
+                            padding: 1rem 0;
+                        }
+                    }
+                }
+            }
+
+
+            .image-banner{
+                padding: 0;
+                width: 100%;
+                img{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            .information{
+                width: 100%;
+                padding: 50px 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .bold{
+                    font-weight: 600;
+                }
+                span{
+                    font-size: 16px;
+                    color: #626262;
+                }
+                .date{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        margin-top: 10px;
+                    }
+                }
+                .author{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        margin-top: 10px;
+                    }
+                }
+
+                .share{
+                    width: max-content;
+                    ul{
+                        display: flex;
+                        margin-top: 10px;
+                        li{
+                            a{
+                                font-size: 16px;
+                                color: #626262;
+                            }
+                            &:not(:last-child){
+                                padding-right: 15px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
