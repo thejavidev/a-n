@@ -12,21 +12,30 @@ $(".btn-close").click(function () {
 	$('html').removeClass('add');
 });
 $(document).ready(function(){
-	var $owl = $('.loop');
-	$('.owl-carousel').owlCarousel({
-		autoplay: false,
+	var loop = $('.loop');
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+		autoplay: true,
 		autoplayHoverPause: true,
 		autoplayTimeout: 3000,
-		autoplaySpeed: 800,
+		autoplaySpeed: 1500,
 		center: true,
 		items: 1.7,
-		
-		loop: true,
+		nav:false,
+		loop:true,
 		dots:false,
 		margin: 15,
 	})
-	
-  });
+	// owl.on('mousewheel', '.owl-stage', function (e) {
+	// 	if (e.deltaY<0) {
+	// 		owl.trigger('next.owl');
+	// 	} else {
+	// 		owl.trigger('prev.owl');
+	// 	}
+	// 	e.preventDefault();
+	// })
+});
+
 ///APPS================
 var APP = {
 	isMobile: null,
@@ -67,7 +76,7 @@ window.addEventListener("load", function () {
 		$(".preloader__container__percent").text(counter + "%");
 		if (counter == 100) {
 			clearInterval(loaderTimer);
-			gsap.to(".preloader", 0.3, { delay: 0.5, y: "-100%" });
+			gsap.to(".preloader", 0.3, { delay: 0.8, y: "-100%" });
 			$("html").removeClass("add");
 		}
 	}, 10);
