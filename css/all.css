@@ -1962,7 +1962,7 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
 
 @media screen and (max-width: 991px) {
   .homer-banner .container-fluid .row .text .content {
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px 20px 0px;
   }
   .homer-banner .container-fluid .row .text .content div {
     position: absolute;
@@ -2019,9 +2019,50 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   }
   .about .container-fluid .row .strategy {
         grid-template-areas: "title" "textt";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-bottom: 40px;
   }
   .about .container-fluid .row .strategy .title, .about .container-fluid .partners .container .row .strategy .partners_all .content h2, .partners .container .about .container-fluid .row .strategy .partners_all .content h2, .about .container-fluid .partners .container .row .partners_all .content .strategy h2, .partners .container .about .container-fluid .row .partners_all .content .strategy h2 {
     margin-left: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about .container-fluid .row .strategy .text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .about .container-fluid .row .creativ {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .about .container-fluid .row .creativ .text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .about .container-fluid .row .creativ .title, .about .container-fluid .partners .container .row .creativ .partners_all .content h2, .partners .container .about .container-fluid .row .creativ .partners_all .content h2, .about .container-fluid .partners .container .row .partners_all .content .creativ h2, .partners .container .about .container-fluid .row .partners_all .content .creativ h2 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about .container-fluid .row .digital {
+        grid-template-areas: "digtaltitle" "digitaltext";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about .container-fluid .row .digital .title, .about .container-fluid .partners .container .row .digital .partners_all .content h2, .partners .container .about .container-fluid .row .digital .partners_all .content h2, .about .container-fluid .partners .container .row .partners_all .content .digital h2, .partners .container .about .container-fluid .row .partners_all .content .digital h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about .container-fluid .row .digital .text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
   }
   .about .container-fluid .row .creativ .title h2, .about .container-fluid .partners .container .row .creativ .partners_all .content h2 h2, .partners .container .about .container-fluid .row .creativ .partners_all .content h2 h2, .about .container-fluid .partners .container .row .partners_all .content .creativ h2 h2, .partners .container .about .container-fluid .row .partners_all .content .creativ h2 h2, .about .container-fluid .row .digital .title h2, .about .container-fluid .partners .container .row .digital .partners_all .content h2 h2, .partners .container .about .container-fluid .row .digital .partners_all .content h2 h2, .about .container-fluid .partners .container .row .partners_all .content .digital h2 h2, .partners .container .about .container-fluid .row .partners_all .content .digital h2 h2, .about .container-fluid .row .strategy .title h2, .about .container-fluid .partners .container .row .strategy .partners_all .content h2 h2, .partners .container .about .container-fluid .row .strategy .partners_all .content h2 h2, .about .container-fluid .partners .container .row .partners_all .content .strategy h2 h2, .partners .container .about .container-fluid .row .partners_all .content .strategy h2 h2 {
     letter-spacing: normal;
