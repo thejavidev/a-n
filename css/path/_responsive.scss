@@ -1,7 +1,12 @@
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1299px) {
     header{
         .container-fluid{
-            padding: 40px 100px;
+            padding: 0px 100px;
+        }
+        &.isFixed {
+            .container-fluid{
+                padding: 0px 100px;
+            }
         }
     }
     footer{
@@ -14,9 +19,110 @@
             padding: 50px 0;
         }
     }
+    .homer-banner  {
+        .container-fluid {
+            .row {
+                .text{
+                    .content{
+                        padding: 100px 0px 0px 150px;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        .container-fluid{
+            .row{
+                .strategy,.creativ, .digital {
+                    .text{
+                        p{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .work {
+        .container-fluid{
+            padding: 30px 100px;
+        }
+    }
+    .news {
+        .container-fluid{
+            padding: 100px 100px;
+        
+        }
+    }
+}
+@media screen and (max-width:1299px) {
+    .homer-banner  {
+        .container-fluid {
+            .row {
+                .text{
+                    .content{
+                        padding: 100px 0px 0px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .news,.work{
+        .container-fluid{
+            .row{
+                .right{
+                    h2{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .news{
+        .container-fluid{
+            .title{
+                font-size: 100px;
+            }
+        }
+    }
+    .about{
+        .container-fluid{
+            .row{
+                .strategy,.creativ, .digital{
+                    .text{
+                        p{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 991px){
-
+    .homer-banner  {
+        .container-fluid {
+            .row {
+                .text{
+                    .content{
+                        padding: 20px 0px 0px 20px;
+                        div{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            z-index: 2;
+                            transform: translate(-50%,100%);
+                            a{
+                                span{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .works{
         .container {
             padding: 50px 50px;
@@ -35,6 +141,93 @@
 
                 .portfolio_gallery{
                     padding-top: 40px;
+                }
+            }
+        }
+    }
+    .work   {
+        .container-fluid{
+            padding: 20px 10px;
+            .row {
+                .left{
+                    h2{
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                }
+                .right{
+                    width: 20%;
+                    position: absolute;
+                    bottom: -40px;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .about{
+        margin-top: 50px;
+        .container-fluid{
+            .row{
+                .digital {
+                    .title{
+                        margin-right: 0px;
+                    }
+                    
+                }
+                .strategy{
+                    grid-template-areas:
+                    "title"
+                    "textt";
+                    .title{
+                        margin-left: 0px;
+                    }
+                }
+                .creativ,.digital,.strategy{
+                    
+                    .title{
+                        h2{
+                            letter-spacing: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .team  {
+        .container-fluid{
+            .row {
+                .team_left{
+                    padding: 30px 0;
+                    .title {
+                        h2{
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .news{
+        margin-top: 50px;
+        position: relative;
+        margin-bottom: 70px;
+        .container-fluid{
+            .title{
+                font-size: 70px;
+                width: 100%;
+                padding: 0;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .row{
+                .left{
+                    margin-bottom: 30px;
+                }
+                .right{
+                    width: 30%;
+                    position: absolute;
+                    bottom: -40px;
+                    right: 0;
                 }
             }
         }

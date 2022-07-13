@@ -110,18 +110,6 @@ html.add {
   padding: 0;
 }
 
-body {
-  background: #F4F4F4;
-  line-height: 1;
-  width: 100%;
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
-}
-
 .row {
   margin: 0;
   padding: 0;
@@ -165,7 +153,7 @@ img {
 }
 
 body {
-  background: #fff;
+  background: #E9ECEF;
   overflow: visible;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -226,7 +214,9 @@ body.overflow {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: #fff;
+  background: #E9ECEF;
+  -webkit-box-shadow: 5px 5px 14px 0px rgba(2, 45, 98, 0.1);
+          box-shadow: 5px 5px 14px 0px rgba(2, 45, 98, 0.1);
 }
 
 .main .mt-div {
@@ -328,6 +318,10 @@ header .container-fluid .row nav .header-left .header-left-text span {
   color: #626262;
 }
 
+header .container-fluid .row nav .header-right {
+  position: relative;
+}
+
 header .container-fluid .row nav .header-right .nav-mobile-button {
   overflow: hidden;
   margin: auto;
@@ -335,12 +329,8 @@ header .container-fluid .row nav .header-right .nav-mobile-button {
   height: 90px;
   background: none;
   cursor: pointer;
-  position: absolute;
-  top: 20px;
   border: none;
   outline: none;
-  right: 100px;
-  z-index: 1000;
 }
 
 header .container-fluid .row nav .header-right .nav-mobile-button .nav-mobile-bar {
@@ -473,15 +463,10 @@ header.isFixed {
   transition: 0.5s ease-in-out;
   -webkit-animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
           animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
-  height: 70px;
 }
 
 header.isFixed .container-fluid {
-  padding: 15px 100px;
-}
-
-header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
-  top: -10px;
+  padding: 0px 20px;
 }
 
 @-webkit-keyframes stickySlideDown {
@@ -513,10 +498,6 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
 .homer-banner {
   position: relative;
   margin-bottom: 50px;
-}
-
-.homer-banner .container-fluid {
-  padding: 10px 0px 0px 100px;
 }
 
 .homer-banner .container-fluid .row {
@@ -563,6 +544,7 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
 }
 
 .homer-banner .container-fluid .row .picture {
+  position: relative;
   padding: 0;
 }
 
@@ -935,7 +917,7 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
 }
 
 .work .container-fluid {
-  padding: 30px 100px;
+  padding: 30px 20px;
 }
 
 .work .container-fluid .row .left h2 {
@@ -1137,7 +1119,6 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
 }
 
 .about .container-fluid .row .digital .text p {
-  width: 40%;
   font-weight: 700;
   word-wrap: break-word;
 }
@@ -1345,7 +1326,7 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
 }
 
 .news .container-fluid {
-  padding: 100px 100px;
+  padding: 20px;
 }
 
 .news .container-fluid .title, .news .container-fluid .partners .container .row .partners_all .content h2, .partners .container .row .partners_all .content .news .container-fluid h2 {
@@ -1785,7 +1766,7 @@ header.isFixed .container-fluid .row nav .header-right .nav-mobile-button {
 }
 
 footer {
-  background: #ffff;
+  background: #E9ECEF;
   width: 100%;
   overflow: hidden;
 }
@@ -1937,9 +1918,12 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   height: 100%;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1299px) {
   header .container-fluid {
-    padding: 40px 100px;
+    padding: 0px 100px;
+  }
+  header.isFixed .container-fluid {
+    padding: 0px 100px;
   }
   footer .container-fluid {
     padding: 0px 100px;
@@ -1947,9 +1931,50 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   .contact .container {
     padding: 50px 0;
   }
+  .homer-banner .container-fluid .row .text .content {
+    padding: 100px 0px 0px 150px;
+  }
+  .about .container-fluid .row .strategy .text p, .about .container-fluid .row .creativ .text p, .about .container-fluid .row .digital .text p {
+    width: 50%;
+  }
+  .work .container-fluid {
+    padding: 30px 100px;
+  }
+  .news .container-fluid {
+    padding: 100px 100px;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .homer-banner .container-fluid .row .text .content {
+    padding: 100px 0px 0px 20px;
+  }
+  .news .container-fluid .row .right h2, .work .container-fluid .row .right h2 {
+    width: 100%;
+  }
+  .news .container-fluid .title, .news .container-fluid .partners .container .row .partners_all .content h2, .partners .container .row .partners_all .content .news .container-fluid h2 {
+    font-size: 100px;
+  }
+  .about .container-fluid .row .strategy .text p, .about .container-fluid .row .creativ .text p, .about .container-fluid .row .digital .text p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .homer-banner .container-fluid .row .text .content {
+    padding: 20px 0px 0px 20px;
+  }
+  .homer-banner .container-fluid .row .text .content div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, 100%);
+            transform: translate(-50%, 100%);
+  }
+  .homer-banner .container-fluid .row .text .content div a span {
+    color: #fff;
+  }
   .works .container {
     padding: 50px 50px;
   }
@@ -1972,6 +1997,61 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   }
   .works .container .row .portfolio_gallery {
     padding-top: 40px;
+  }
+  .work .container-fluid {
+    padding: 20px 10px;
+  }
+  .work .container-fluid .row .left h2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .work .container-fluid .row .right {
+    width: 20%;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+  }
+  .about {
+    margin-top: 50px;
+  }
+  .about .container-fluid .row .digital .title, .about .container-fluid .partners .container .row .digital .partners_all .content h2, .partners .container .about .container-fluid .row .digital .partners_all .content h2, .about .container-fluid .partners .container .row .partners_all .content .digital h2, .partners .container .about .container-fluid .row .partners_all .content .digital h2 {
+    margin-right: 0px;
+  }
+  .about .container-fluid .row .strategy {
+        grid-template-areas: "title" "textt";
+  }
+  .about .container-fluid .row .strategy .title, .about .container-fluid .partners .container .row .strategy .partners_all .content h2, .partners .container .about .container-fluid .row .strategy .partners_all .content h2, .about .container-fluid .partners .container .row .partners_all .content .strategy h2, .partners .container .about .container-fluid .row .partners_all .content .strategy h2 {
+    margin-left: 0px;
+  }
+  .about .container-fluid .row .creativ .title h2, .about .container-fluid .partners .container .row .creativ .partners_all .content h2 h2, .partners .container .about .container-fluid .row .creativ .partners_all .content h2 h2, .about .container-fluid .partners .container .row .partners_all .content .creativ h2 h2, .partners .container .about .container-fluid .row .partners_all .content .creativ h2 h2, .about .container-fluid .row .digital .title h2, .about .container-fluid .partners .container .row .digital .partners_all .content h2 h2, .partners .container .about .container-fluid .row .digital .partners_all .content h2 h2, .about .container-fluid .partners .container .row .partners_all .content .digital h2 h2, .partners .container .about .container-fluid .row .partners_all .content .digital h2 h2, .about .container-fluid .row .strategy .title h2, .about .container-fluid .partners .container .row .strategy .partners_all .content h2 h2, .partners .container .about .container-fluid .row .strategy .partners_all .content h2 h2, .about .container-fluid .partners .container .row .partners_all .content .strategy h2 h2, .partners .container .about .container-fluid .row .partners_all .content .strategy h2 h2 {
+    letter-spacing: normal;
+  }
+  .team .container-fluid .row .team_left {
+    padding: 30px 0;
+  }
+  .team .container-fluid .row .team_left .title h2, .team .container-fluid .partners .container .row .team_left .partners_all .content h2 h2, .partners .container .team .container-fluid .row .team_left .partners_all .content h2 h2, .team .container-fluid .partners .container .row .partners_all .content .team_left h2 h2, .partners .container .team .container-fluid .row .partners_all .content .team_left h2 h2 {
+    font-size: 50px;
+  }
+  .news {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .news .container-fluid .title, .news .container-fluid .partners .container .row .partners_all .content h2, .partners .container .row .partners_all .content .news .container-fluid h2 {
+    font-size: 70px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .news .container-fluid .row .left {
+    margin-bottom: 30px;
+  }
+  .news .container-fluid .row .right {
+    width: 30%;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
   }
 }
 

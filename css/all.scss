@@ -112,17 +112,7 @@ html {
     padding: 0;
 }
 
-body {
-    background: #F4F4F4;
-    line-height: 1;
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    padding: 0;
-}
+
 
 .row {
     margin: 0;
@@ -201,9 +191,8 @@ img {
 //     src: url("../font/Codec-600.ttf") format("truetype");
 // }
 body {
-    background: #fff;
+     background: #E9ECEF;
     overflow: visible;
-
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
@@ -263,13 +252,15 @@ body {
     position: relative;
     z-index: 2;
     flex-grow: 1;
-    background: #fff;
+    background: #E9ECEF;
+
  
-    // box-shadow: 5px 5px 14px 0px rgba(2,45,98,.2);
+    box-shadow: 5px 5px 14px 0px rgba(2,45,98,.1);
     .mt-div{
         margin-top: 100px;
     }
 }
+ 
 
 @import './path/loader';
 @import './path/header';
