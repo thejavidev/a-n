@@ -24,7 +24,6 @@
 
 
 .work_text{
-    
     height: 100%;
     .container{
         padding: 50px 0;
@@ -84,8 +83,6 @@
 }
 .work-project-images{
     position: relative;
- 
-    
     .back-project{
         display: flex;
         flex-direction: column;
@@ -135,6 +132,142 @@
                    
                     img{
                         width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.work{
+    position: relative;
+    .container-fluid{
+        padding: 100px 100px;
+        .title{
+            font-weight: 600;
+            font-size: 175px;
+            text-transform: uppercase;
+            color: #DC248E;
+            padding-left: 245px;
+            width: max-content;
+            padding-bottom: 50px;
+        }
+        .row{
+            .left{
+                h2{
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #626262;
+                    width: 50%;
+                }
+            }
+            .box{
+                padding: 0;
+                height: 100%;
+                position: relative;
+                
+                .image{
+                    width: 100%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        
+                        transition: all 4s linear;
+                    }
+                    &:hover img{
+                        transform: scale(1.5) rotate(10deg);
+                    }
+                    .content{
+                        position: absolute;
+                        left: 40px;
+                        bottom: 50px;
+                        h2{
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: #fff;
+                        }
+                        span{
+                            font-weight: 500;
+                            font-size: 10px;
+                            color: #fff;
+                        }
+                    }
+                    
+                }
+            
+            }
+            .right{
+                display: flex;
+                align-items: flex-end;
+                justify-content: right;
+                
+                h2{
+                    font-weight: 500;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    color: #626262;
+                    width: 50%;
+                }
+                .right-btn{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    .btn{
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    &.details{
+        .container-fluid{
+            .row{
+                .left{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    cursor: pointer;
+                }
+                .box{
+                    position: relative;
+                    .image{
+                        img{
+                            height: 500px;
+                        }
+                    }
+                    .content{
+                        position: absolute;
+                        text-align: center;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                        width: 100%;
+                        top: 80%;
+                        left: 50%;
+                        opacity: 0;
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        -moz-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                        h3{
+                            font-weight: 700;
+                            font-size: 50px;
+                            text-transform: capitalize;
+                            color: #FFFFFF;
+                        }
+                    }
+                    &:hover {
+                        .content{
+                            top: 60%;
+                            left: 50%;
+                            opacity: 1;
+                            z-index: 55;
+                        }
                     }
                 }
             }
