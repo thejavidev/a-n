@@ -30,7 +30,7 @@ header{
                     }
                 }
                 .header-right{
-                    position: relative;
+                  
                     .nav-mobile-button{
                         overflow: hidden;
                         margin: auto;
@@ -40,7 +40,7 @@ header{
                         cursor: pointer;
                         border: none;
                         outline: none;
-
+                        position: relative;
                         .nav-mobile-bar{
                             left: 15px;
                             width: 35px;

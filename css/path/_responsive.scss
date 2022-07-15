@@ -106,16 +106,26 @@
                 .text{
                     .content{
                         padding: 20px 0px 20px 0px;
+                        text-align: center;
+                        h2{
+                            width: 100%;
+                        }
                         div{
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            z-index: 2;
-                            transform: translate(-50%,100%);
-                            a{
-                                span{
-                                    color: #fff;
-                                }
+                            display: none;
+                        }
+                    }
+                }
+                .picture{
+                    position: relative;
+                    .video{
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        a{
+                            span{
+                                color: #fff;
                             }
                         }
                     }
@@ -156,7 +166,7 @@
                     }
                 }
                 .right{
-                    width: 20%;
+                    width: max-content;
                     position: absolute;
                     bottom: -40px;
                     right: 0;
@@ -235,11 +245,33 @@
         .container-fluid{
             .row {
                 .team_left{
+                    flex-direction: column;
                     padding: 30px 0;
                     .title {
                         h2{
                             font-size: 50px;
                         }
+                    }
+                    .logo_team{
+                        flex-direction: column;
+                        .image{
+                            margin-bottom: 30px;
+                            .mobile{
+                                display: block;
+                            }
+                            .desktop{
+                                display: none;
+                            }
+                        }
+                        span{
+                            margin-bottom: 50px;
+                            color: #fff;
+                            padding: 0;
+                            text-align: center;
+                        }
+                    }
+                    .title{
+                        margin-bottom: 30px;
                     }
                 }
             }
@@ -270,9 +302,110 @@
             }
         }
     }
+    footer {
+        .container-fluid{
+            .row{
+                .footer-top{
+                    flex-wrap: wrap; 
+                    flex-direction: column;
+                    .not-responsive{
+                        display: none;
+                    }
+                    .fot-logo{
+                        order: 1;
+                    }
+                    .content-menus{
+                        order: -1;
+                        .menu,.fot-news{
+                            flex-direction: row;
+                        }
+                        span{
+                            padding-right: 10px;
+                            text-decoration: underline;
+                        }
+                    }
+                    .inner{
+                        .content{
+                            &.social{
+                                flex-direction: row;
+                                span{
+                                    padding-right: 10px;
+                                }
+                            }
+                            padding: 0;
+                            &.fot-news{
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                }
+                .footer-bottom{
+                    flex-direction: column;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    header{
+        .container-fluid{
+            .row {
+                nav {
+                    .header-right{
+                        .nav-mobile-button{
+                            width: 60px;
+                            height: 60px;
+                            .nav-mobile-bar#nav-mobile-bar-top{
+                                top: 25px;
+                            }
+                            .nav-mobile-bar#nav-mobile-bar-middle{
+                                top: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .partners    {
+        .container{
+            .row{
+                .partners_all{
+                    padding: 20px;
+                    .content{
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h2{
+
+                        }
+                        span{
+                            margin-top: 30px;
+                            text-align: center;
+                            width: 50%;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px){
+    header{
+        .container-fluid{
+            .row{
+                
+                nav{
+                    .header-left{
+                        .header-left-text{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .banner{
         .container-fluid{
             .row{

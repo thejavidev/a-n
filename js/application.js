@@ -32,6 +32,10 @@ $(document).ready(function(){
 			600:{
 				items:1,
 				margin:5,
+			},
+			400:{
+				items:1,
+				margin:5,
 			}
 		}
 	})
@@ -52,7 +56,11 @@ var APP = {
 };
 // var html = document.querySelector("html");
 // html.classList.add("add");
-
+wow = new WOW({
+    animateClass: 'animated',
+    offset: 100
+});
+wow.init();
 
 $(window).on('scroll', function (event) {
 	var scroll = $(window).scrollTop();
@@ -191,6 +199,37 @@ $(window).on('load', function () {
 				footer.removeAttr('style');
 			}
 		});
+	}
+});
+function anime(){
+	setTimeout(function(){
+        document.querySelector('.animations-1').classList.add('add');
+    },0);
+	setTimeout(function(){
+        document.querySelector('.animations-2').classList.add('add');
+    },1000);
+	setTimeout(function(){
+        document.querySelector('.animations-3').classList.add('add');
+    },2200);
+	setTimeout(function(){
+        document.querySelector('.animations-4').classList.add('add');
+    },3200);
+	setTimeout(function(){
+        document.querySelector('.animations-5').classList.add('add');
+    },4200);
+	setTimeout(function(){
+        document.querySelector('.animations-6').classList.add('add');
+    },5200);
+}
+
+
+$(window).on('scroll', function (event) {
+	var scroll = $(window).scrollTop();
+	if (scroll > 450) {
+		setTimeout(() => {
+			anime();
+		}, 0);
+		
 	}
 });
 

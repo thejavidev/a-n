@@ -250,17 +250,15 @@ body {
 
 .main {
     position: relative;
-    z-index: 2;
+    z-index: 60;
     flex-grow: 1;
     background: #E9ECEF;
-
- 
     box-shadow: 5px 5px 14px 0px rgba(2,45,98,.1);
-    .mt-div{
-        margin-top: 100px;
-    }
 }
- 
+.inner-main{
+    z-index: 88;
+    background: #E9ECEF;
+}
 
 @import './path/loader';
 @import './path/header';
