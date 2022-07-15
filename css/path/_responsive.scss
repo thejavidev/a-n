@@ -1,7 +1,12 @@
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1299px) {
     header{
         .container-fluid{
-            padding: 40px 100px;
+            padding: 0px 100px;
+        }
+        &.isFixed {
+            .container-fluid{
+                padding: 0px 100px;
+            }
         }
     }
     footer{
@@ -14,8 +19,117 @@
             padding: 50px 0;
         }
     }
+    .homer-banner  {
+        .container-fluid {
+            .row {
+                .text{
+                    .content{
+                        padding: 100px 0px 0px 150px;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        .container-fluid{
+            .row{
+                .strategy,.creativ, .digital {
+                    .text{
+                        p{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .work {
+        .container-fluid{
+            padding: 30px 100px;
+        }
+    }
+    .news {
+        .container-fluid{
+            padding: 100px 100px;
+        
+        }
+    }
+}
+@media screen and (max-width:1299px) {
+    .homer-banner  {
+        .container-fluid {
+            .row {
+                .text{
+                    .content{
+                        padding: 100px 0px 0px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .news,.work{
+        .container-fluid{
+            .row{
+                .right{
+                    h2{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .news{
+        .container-fluid{
+            .title{
+                font-size: 100px;
+            }
+        }
+    }
+    .about{
+        .container-fluid{
+            .row{
+                .strategy,.creativ, .digital{
+                    .text{
+                        p{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 991px){
+    .homer-banner  {
+        .container-fluid {
+            .row {
+                .text{
+                    .content{
+                        padding: 20px 0px 0px 20px;
+                        div{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            z-index: 2;
+                            transform: translate(-50%,100%);
+                            a{
+                                span{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .banner{
+        height: 30vh;
+        &::before{
+            height: 30vh;
+        }
+    }
 
     .works{
         .container {
@@ -35,6 +149,170 @@
 
                 .portfolio_gallery{
                     padding-top: 40px;
+                }
+            }
+        }
+    }
+    .work{
+        .container-fluid{
+            padding: 20px 10px;
+            .row {
+                .left{
+                    h2{
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                }
+                .right{
+                    width: 20%;
+                    position: absolute;
+                    bottom: -40px;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .about{
+        margin-top: 50px;
+        .container-fluid{
+            .row{
+                .digital {
+                    .title{
+                        margin-right: 0px;
+                    }
+                    
+                }
+                .strategy{
+                    grid-template-areas:
+                    "title"
+                    "textt";
+                    .title{
+                        margin-left: 0px;
+                    }
+                }
+                .creativ,.digital,.strategy{
+                    
+                    .title{
+                        h2{
+                            letter-spacing: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .team  {
+        .container-fluid{
+            .row {
+                .team_left{
+                    padding: 30px 0;
+                    .title {
+                        h2{
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .news{
+        margin-top: 50px;
+        position: relative;
+        margin-bottom: 70px;
+        .container-fluid{
+            .title{
+                font-size: 70px;
+                width: 100%;
+                padding: 0;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .row{
+                .left{
+                    margin-bottom: 30px;
+                }
+                .right{
+                    width: 30%;
+                    position: absolute;
+                    bottom: -40px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .news_all{
+        .container{
+            padding: 50px 0;
+        }
+    }
+    
+
+    .work_banner{
+        .work-banner-inner{
+            padding: 100px 0;
+        }
+    }
+
+    .work-project-images{
+        .back-project{
+            display: none;
+        }
+    }
+
+    .work_detail_author{
+        .container{
+            .row{
+                .information_work_detail{
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+
+    .work_text{
+        .container{
+            .row{
+                .top{
+                    justify-content: initial;
+                    .content{
+                        h2{
+                            width: 100%;
+                        }
+                        span{
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .bottom{
+                    justify-content: initial;
+                    .content{
+                        padding: 20px 0px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+
+    .work-bottom{
+        &.details{
+            .container-fluid{
+                .row{
+                    .box{
+                        flex-direction: column;
+                        .image{
+                            order: 1;
+                            img{
+                                height: initial;
+                            }
+                        }
+                    }
+
+                    .left{
+                        order: 2;
+                    }
                 }
             }
         }
@@ -92,6 +370,48 @@
             }
         }
     }
+
+    .work_text{
+        .container{
+            .row{
+                .top{
+                    .content{
+                        h2{
+                            width: 65%;
+                            font-size: 32px;
+                        }
+                        span{
+                            padding: 10px 0;
+                            width: 70%;
+                            font-size: 12px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .work_detail_author{
+        .container{
+            .row{
+                .information_work_detail{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+                    grid-row-gap: 4rem;
+                    padding: 30px 30px;
+                }
+            }
+        }
+    }
+
+    .work-bottom{
+        .container-fluid{
+            padding: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 565px){
@@ -102,6 +422,22 @@
                     .box{
                         width: 100%;
                     }
+                }
+            }
+        }
+    }
+
+    .work_text{
+        .container {
+            padding: 50px 20px;
+        }
+    }
+
+    .work_detail_author{
+        .container{
+            .row{
+                .information_work_detail{
+                    grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));
                 }
             }
         }

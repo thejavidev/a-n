@@ -1,9 +1,18 @@
 .homer-banner{
     position: relative;
     margin-bottom: 50px;
+    // padding-bottom: calc(var(--vh, 1vh)*60);
+    // z-index: -1;
     .container-fluid{
-
-        padding: 10px 0px 0px 100px;
+      
+        // &.s-hero__background{
+        //     position: fixed;
+        //     top: 100px;
+        //     left: 0;
+        //     &.initial{
+        //         position: initial;
+        //     }
+        // }
         .row{
             padding: 0px;
             .text{
@@ -38,6 +47,7 @@
                 }
             }
             .picture{
+                position: relative;
                 padding: 0;
                 .imag{
                     width: 100%;

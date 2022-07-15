@@ -30,6 +30,7 @@ header{
                     }
                 }
                 .header-right{
+                    position: relative;
                     .nav-mobile-button{
                         overflow: hidden;
                         margin: auto;
@@ -37,12 +38,9 @@ header{
                         height: 90px;
                         background: none;
                         cursor: pointer;
-                        position: absolute;
-                        top: 20px;
                         border: none;
                         outline: none;
-                        right: 100px;
-                        z-index: 1000;
+
                         .nav-mobile-bar{
                             left: 15px;
                             width: 35px;
@@ -155,18 +153,8 @@ header{
         box-shadow: 2px 2px 4px 0px rgba(2,45,98,.1);
         transition: 0.5s ease-in-out;
         animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
-        height: 70px;
         .container-fluid{
-            padding: 15px 100px;
-            .row{
-                nav{
-                    .header-right{
-                        .nav-mobile-button{
-                            top: -10px;
-                        }
-                    }
-                }
-            }
+            padding: 0px 20px;
         }
     }
 }

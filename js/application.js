@@ -25,6 +25,15 @@ $(document).ready(function(){
 		loop:true,
 		dots:false,
 		margin: 15,
+		responsive:{
+			1000:{
+				items:1.7,
+			},
+			600:{
+				items:1,
+				margin:5,
+			}
+		}
 	})
 	// owl.on('mousewheel', '.owl-stage', function (e) {
 	// 	if (e.deltaY<0) {
